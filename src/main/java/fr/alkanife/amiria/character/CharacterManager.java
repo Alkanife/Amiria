@@ -20,6 +20,7 @@ public class CharacterManager {
         characters.add(new Asarim());
         characters.add(new Bimai());
         characters.add(new Christopher());
+        characters.add(new DarkenSheele());
     }
     
     public Character getCharacter(String name) {
