@@ -15,6 +15,7 @@ public class CharacterManager {
         characters.add(new Alexia());
         characters.add(new Aliedad());
         characters.add(new Amalia());
+        characters.add(new Andrea());
     }
     
     public Character getCharacter(String name) {
