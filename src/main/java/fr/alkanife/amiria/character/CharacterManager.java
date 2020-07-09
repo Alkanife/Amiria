@@ -39,6 +39,7 @@ public class CharacterManager {
         characters.add(new Maskai());
         characters.add(new Math());
         characters.add(new MathSpirit());
+        characters.add(new Matthias());
     }
     
     public Character getCharacter(String name) {
