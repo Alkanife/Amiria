@@ -24,6 +24,7 @@ public class CharacterManager {
         characters.add(new Endal());
         characters.add(new Enyxia());
         characters.add(new Extasia());
+        characters.add(new Gaia());
     }
     
     public Character getCharacter(String name) {
