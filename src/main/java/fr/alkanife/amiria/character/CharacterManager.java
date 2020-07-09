@@ -42,6 +42,7 @@ public class CharacterManager {
         characters.add(new Matthias());
         characters.add(new Maureen());
         characters.add(new Midorai());
+        characters.add(new Morgiana());
     }
     
     public Character getCharacter(String name) {
