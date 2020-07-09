@@ -50,6 +50,7 @@ public class CharacterManager {
         characters.add(new Ravenn());
         characters.add(new Rika());
         characters.add(new Sheele());
+        characters.add(new Sully());
     }
     
     public Character getCharacter(String name) {
