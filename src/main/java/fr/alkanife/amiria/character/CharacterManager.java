@@ -49,6 +49,7 @@ public class CharacterManager {
         characters.add(new Raizan());
         characters.add(new Ravenn());
         characters.add(new Rika());
+        characters.add(new Sheele());
     }
     
     public Character getCharacter(String name) {
