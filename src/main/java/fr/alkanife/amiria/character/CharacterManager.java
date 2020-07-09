@@ -23,6 +23,7 @@ public class CharacterManager {
         characters.add(new DarkenSheele());
         characters.add(new Endal());
         characters.add(new Enyxia());
+        characters.add(new Extasia());
     }
     
     public Character getCharacter(String name) {
