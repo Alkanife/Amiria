@@ -22,6 +22,7 @@ public class CharacterManager {
         characters.add(new Christopher());
         characters.add(new DarkenSheele());
         characters.add(new Endal());
+        characters.add(new Enyxia());
     }
     
     public Character getCharacter(String name) {
