@@ -30,6 +30,7 @@ public class CharacterManager {
         //Jessica Grey
         characters.add(new Kanna());
         characters.add(new Kashya());
+        characters.add(new Kass());
     }
     
     public Character getCharacter(String name) {
