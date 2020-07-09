@@ -53,6 +53,7 @@ public class CharacterManager {
         characters.add(new Sully());
         characters.add(new Terry());
         characters.add(new Tidus());
+        characters.add(new Trinity());
     }
     
     public Character getCharacter(String name) {
