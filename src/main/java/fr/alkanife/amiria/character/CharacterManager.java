@@ -11,6 +11,7 @@ public class CharacterManager {
         characters = new ArrayList<>();
 
         characters.add(new Adamai());
+        characters.add(new Akuma());
     }
     
     public Character getCharacter(String name) {
