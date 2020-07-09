@@ -32,6 +32,7 @@ public class CharacterManager {
         characters.add(new Kashya());
         characters.add(new Kass());
         characters.add(new Kei());
+        characters.add(new Kudo());
     }
     
     public Character getCharacter(String name) {
