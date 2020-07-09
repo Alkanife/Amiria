@@ -55,6 +55,7 @@ public class CharacterManager {
         characters.add(new Tidus());
         characters.add(new Trinity());
         characters.add(new Veldo());
+        characters.add(new William());
     }
     
     public Character getCharacter(String name) {
