@@ -26,6 +26,7 @@ public class CharacterManager {
         characters.add(new Extasia());
         characters.add(new Gaia());
         characters.add(new Gosutookami());
+        characters.add(new Hanyuu());
     }
     
     public Character getCharacter(String name) {
