@@ -38,6 +38,7 @@ public class CharacterManager {
         characters.add(new Marla());
         characters.add(new Maskai());
         characters.add(new Math());
+        characters.add(new MathSpirit());
     }
     
     public Character getCharacter(String name) {
