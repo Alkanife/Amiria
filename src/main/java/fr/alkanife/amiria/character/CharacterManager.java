@@ -25,6 +25,7 @@ public class CharacterManager {
         characters.add(new Enyxia());
         characters.add(new Extasia());
         characters.add(new Gaia());
+        characters.add(new Gosutookami());
     }
     
     public Character getCharacter(String name) {
