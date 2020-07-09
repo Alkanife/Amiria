@@ -27,6 +27,8 @@ public class CharacterManager {
         characters.add(new Gaia());
         characters.add(new Gosutookami());
         characters.add(new Hanyuu());
+        //Jessica Grey
+        characters.add(new Kanna());
     }
     
     public Character getCharacter(String name) {
