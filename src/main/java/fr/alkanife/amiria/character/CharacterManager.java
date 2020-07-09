@@ -37,6 +37,7 @@ public class CharacterManager {
         characters.add(new Mahito());
         characters.add(new Marla());
         characters.add(new Maskai());
+        characters.add(new Math());
     }
     
     public Character getCharacter(String name) {
