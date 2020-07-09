@@ -43,6 +43,7 @@ public class CharacterManager {
         characters.add(new Maureen());
         characters.add(new Midorai());
         characters.add(new Morgiana());
+        characters.add(new Nagoramatio());
     }
     
     public Character getCharacter(String name) {
