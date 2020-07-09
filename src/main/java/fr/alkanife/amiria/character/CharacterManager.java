@@ -18,6 +18,7 @@ public class CharacterManager {
         characters.add(new Andrea());
         characters.add(new Anoriel());
         characters.add(new Asarim());
+        characters.add(new Bimai());
     }
     
     public Character getCharacter(String name) {
