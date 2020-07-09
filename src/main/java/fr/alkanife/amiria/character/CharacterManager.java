@@ -21,6 +21,7 @@ public class CharacterManager {
         characters.add(new Bimai());
         characters.add(new Christopher());
         characters.add(new DarkenSheele());
+        characters.add(new Endal());
     }
     
     public Character getCharacter(String name) {
