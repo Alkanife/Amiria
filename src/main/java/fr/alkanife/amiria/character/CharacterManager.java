@@ -12,6 +12,7 @@ public class CharacterManager {
 
         characters.add(new Adamai());
         characters.add(new Akuma());
+        characters.add(new Alexia());
     }
     
     public Character getCharacter(String name) {
