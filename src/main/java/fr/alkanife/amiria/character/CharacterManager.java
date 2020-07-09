@@ -41,6 +41,7 @@ public class CharacterManager {
         characters.add(new MathSpirit());
         characters.add(new Matthias());
         characters.add(new Maureen());
+        characters.add(new Midorai());
     }
     
     public Character getCharacter(String name) {
