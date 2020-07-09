@@ -40,6 +40,7 @@ public class CharacterManager {
         characters.add(new Math());
         characters.add(new MathSpirit());
         characters.add(new Matthias());
+        characters.add(new Maureen());
     }
     
     public Character getCharacter(String name) {
