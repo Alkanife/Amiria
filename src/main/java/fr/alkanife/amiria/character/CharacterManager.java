@@ -44,6 +44,7 @@ public class CharacterManager {
         characters.add(new Midorai());
         characters.add(new Morgiana());
         characters.add(new Nagoramatio());
+        characters.add(new Nerias());
     }
     
     public Character getCharacter(String name) {
