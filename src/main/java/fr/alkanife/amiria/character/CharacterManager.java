@@ -45,6 +45,7 @@ public class CharacterManager {
         characters.add(new Morgiana());
         characters.add(new Nagoramatio());
         characters.add(new Nerias());
+        characters.add(new Nikolai());
     }
     
     public Character getCharacter(String name) {
