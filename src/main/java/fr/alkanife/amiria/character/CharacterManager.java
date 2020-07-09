@@ -47,6 +47,7 @@ public class CharacterManager {
         characters.add(new Nerias());
         characters.add(new Nikolai());
         characters.add(new Raizan());
+        characters.add(new Ravenn());
     }
     
     public Character getCharacter(String name) {
