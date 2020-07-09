@@ -33,6 +33,7 @@ public class CharacterManager {
         characters.add(new Kass());
         characters.add(new Kei());
         characters.add(new Kudo());
+        characters.add(new Kuyu());
     }
     
     public Character getCharacter(String name) {
