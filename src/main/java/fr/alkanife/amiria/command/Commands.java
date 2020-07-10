@@ -4,9 +4,7 @@ import fr.alkanife.amiria.Amiria;
 import fr.alkanife.amiria.Log;
 import fr.alkanife.amiria.character.Character;
 import net.dv8tion.jda.api.EmbedBuilder;
-import net.dv8tion.jda.api.MessageBuilder;
 import net.dv8tion.jda.api.entities.Message;
-import net.dv8tion.jda.api.entities.MessageEmbed;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.RuntimeMXBean;
