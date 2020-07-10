@@ -56,6 +56,7 @@ public class CharacterManager {
         characters.add(new Trinity());
         characters.add(new Veldo());
         characters.add(new William());
+        characters.add(new WrongSheele());
     }
     
     public Character getCharacter(String name) {
