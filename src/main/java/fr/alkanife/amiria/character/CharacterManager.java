@@ -59,6 +59,7 @@ public class CharacterManager {
         characters.add(new WrongSheele());
         characters.add(new Yoshisuu());
         characters.add(new Yudo());
+        characters.add(new Yuu());
     }
     
     public Character getCharacter(String name) {
