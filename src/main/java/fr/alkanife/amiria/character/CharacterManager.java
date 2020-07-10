@@ -57,6 +57,7 @@ public class CharacterManager {
         characters.add(new Veldo());
         characters.add(new William());
         characters.add(new WrongSheele());
+        characters.add(new Yoshisuu());
     }
     
     public Character getCharacter(String name) {
