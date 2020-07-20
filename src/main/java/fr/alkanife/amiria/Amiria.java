@@ -20,7 +20,7 @@ public class Amiria {
     private static CharacterManager characterManager = new CharacterManager();
 
     private static String enyxia = "341997146519633922";
-    private static String hrp = "468442309311070252";
+    private static String hrp = "342148162972024844";
 
     public static void main(String[] args) {
         try {
