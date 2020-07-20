@@ -9,6 +9,7 @@ import net.dv8tion.jda.api.entities.Message;
 import java.lang.management.ManagementFactory;
 import java.lang.management.RuntimeMXBean;
 import java.text.SimpleDateFormat;
+import java.util.concurrent.TimeUnit;
 
 public class Commands {
 
@@ -35,12 +36,14 @@ public class Commands {
     public void status(Message message) {
         RuntimeMXBean rb = ManagementFactory.getRuntimeMXBean();
 
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
-        String upTime = simpleDateFormat.format(rb.getUptime());
+        long uptime = ManagementFactory.getRuntimeMXBean().getUptime();
+        String uptimeString = String.format("%02d heures, %02d minutes, et %02d secondes", TimeUnit.MILLISECONDS.toHours(uptime),
+                TimeUnit.MILLISECONDS.toMinutes(uptime) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(uptime)),
+                TimeUnit.MILLISECONDS.toSeconds(uptime) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(uptime)));
 
         EmbedBuilder embedBuilder = new EmbedBuilder();
         embedBuilder.setTitle("Status");
-        embedBuilder.setDescription("Uptime: `" + upTime + "`\n" +
+        embedBuilder.setDescription("Uptime: `" + uptimeString + "`\n" +
                 "Ping: `" + message.getJDA().getGatewayPing() + " ms`\n" +
                 "\n" +
                 "Detected commands: `" + Amiria.getCommandHandler().getCommands().size() + "`\n" +
