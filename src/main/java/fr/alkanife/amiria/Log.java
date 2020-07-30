@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Log {
 
-    public static List<String> errors = new ArrayList<>();
+    private static int handledErrors = 0;
 
     public static void log(String message) {
         System.out.println("\u001B[36m[" + dateAndHour() + "] " + message + "\u001B[0m");
@@ -18,8 +18,12 @@ public class Log {
     }
 
     public static void error(Exception exception) {
-        errors.add(exception.toString());
+        handledErrors += 1;
         exception.printStackTrace();
+    }
+
+    public static int getHandledErrors() {
+        return handledErrors;
     }
 
     private static String dateAndHour() {
@@ -27,5 +31,4 @@ public class Log {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
         return simpleDateFormat.format(new Date());
     }
-
 }

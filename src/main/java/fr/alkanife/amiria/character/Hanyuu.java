@@ -39,7 +39,7 @@ public class Hanyuu extends Character {
 
     @Override
     public int floor() {
-        return 0;
+        return 45;
     }
 
     @Override

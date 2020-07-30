@@ -1,105 +1,11 @@
 package fr.alkanife.amiria.command;
 
 import fr.alkanife.amiria.Amiria;
-import fr.alkanife.amiria.Log;
 import fr.alkanife.amiria.character.Character;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Message;
 
-import java.lang.management.ManagementFactory;
-import java.lang.management.RuntimeMXBean;
-import java.text.SimpleDateFormat;
-import java.util.concurrent.TimeUnit;
-
-public class Commands {
-
-    @Command(name = "help",
-            description = "Besoin d'aide ?")
-    public void help(Message message) {
-        StringBuilder stringBuilder = new StringBuilder();
-
-        for (SimpleCommand simpleCommand : Amiria.getCommandHandler().getCommands())
-            stringBuilder.append("  ■ <@439490584189599744> ").append(simpleCommand.getName()).append(" - ").append(simpleCommand.getDesription()).append("\n");
-
-        message.getChannel().sendMessage("Pour vous aider je peux vous proposer une liste de mes commandes !\n"
-                + stringBuilder.toString()).queue();
-    }
-
-    @Command(name = "about",
-            description = "Qui suis-je ? Quelle est ma raison de vivre ?")
-    public void about(Message message) {
-        message.getChannel().sendMessage("Je suis Amiria, un bot créé pour vous aider ou tout simplement vous renseigner à propos d'Enyxia. J'ai été originalement créée et administrée le 3 avril 2018 par Sheele, puis re-créée sur de bonnes bases par Alkanife le 5 juillet 2020.").queue();
-    }
-
-    @Command(name = "status",
-            description = "T'inquiète je pète la forme")
-    public void status(Message message) {
-        RuntimeMXBean rb = ManagementFactory.getRuntimeMXBean();
-
-        long uptime = ManagementFactory.getRuntimeMXBean().getUptime();
-        String uptimeString = String.format("%02d heures, %02d minutes, et %02d secondes", TimeUnit.MILLISECONDS.toHours(uptime),
-                TimeUnit.MILLISECONDS.toMinutes(uptime) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(uptime)),
-                TimeUnit.MILLISECONDS.toSeconds(uptime) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(uptime)));
-
-        EmbedBuilder embedBuilder = new EmbedBuilder();
-        embedBuilder.setTitle("Status");
-        embedBuilder.setDescription("Uptime: `" + uptimeString + "`\n" +
-                "Ping: `" + message.getJDA().getGatewayPing() + " ms`\n" +
-                "\n" +
-                "Detected commands: `" + Amiria.getCommandHandler().getCommands().size() + "`\n" +
-                "Executed commands: `" + Amiria.getCommandHandler().executedCommands + "`\n" +
-                "Handled errors: `" + Log.errors.size() + "`");
-
-        message.getChannel().sendMessage(embedBuilder.build()).queue();
-
-    }
-
-    @Command(name = "admin",
-            description = "Commande réservée au développeur",
-            isAdmin = true)
-    public void admin(Message message) {
-        String content = message.getContentStripped();
-        String[] args = content.split(" ");
-
-        if (args.length == 2) {
-            message.getChannel().sendMessage("Mmh, ce n'est pas comme ça que fonctionne cette commande. Essayez `.. admin errors/restart`.").queue();
-            return;
-        }
-
-        String arg = args[2].toLowerCase();
-
-        switch (arg) {
-            case "errors":
-                if (Log.errors.size() == 0) {
-                    message.getChannel().sendMessage("Je me porte parfaitement bien, aucune erreur !").queue();
-                    return;
-                }
-
-                if (Log.errors.size() > 5) {
-                    message.getChannel().sendMessage("Le nombre d'erreur est trop grand, regardez la console.").queue();
-                    return;
-                }
-
-                StringBuilder errors = new StringBuilder();
-                errors.append(Log.errors.size()).append(" erreur(s):\n");
-
-                for (String error : Log.errors)
-                    errors.append("  ■ `").append(error).append("`\n");
-
-                message.getChannel().sendMessage(errors.toString()).queue();
-                break;
-
-            case "restart":
-                message.getChannel().sendMessage("\uD83D\uDC4C").queue();
-                message.getJDA().shutdown();
-                break;
-
-            default:
-                message.getChannel().sendMessage("Mmh, ce n'est pas comme ça que fonctionne cette commande. Essayez `.. admin errors/restart`.").queue();
-                break;
-        }
-
-    }
+public class Enyxia {
 
     @Command(name = "enyxia",
             description = "À propos d'Enyxia")
@@ -241,7 +147,7 @@ public class Commands {
         Character character = Amiria.getCharacterManager().getCharacter(charName.toString());
 
         if (character == null) {
-            message.getChannel().sendMessage("Je ne parviens a trouver le personnage '" + charName.toString() + "'.").queue();
+            message.getChannel().sendMessage("Je ne parviens pas à trouver le personnage '" + charName.toString() + "'.").queue();
             return;
         }
 
@@ -263,7 +169,7 @@ public class Commands {
             fiche.append("**ÂGE:** ").append(character.age()).append(" (").append(character.birth()).append(")\n");
         } else {
             if (character.birth() != null)
-                fiche.append("**ANNIVERSAIRE:** ").append(character.birth()).append("\n");
+                fiche.append("**DATE DE NAISSANCE:** ").append(character.birth()).append("\n");
 
             if (character.age() != null)
                 fiche.append("**ÂGE:** ").append(character.age()).append("\n");
@@ -312,4 +218,5 @@ public class Commands {
 
         message.getChannel().sendMessage(fiche).queue();
     }
+
 }

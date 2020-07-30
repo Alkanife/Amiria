@@ -11,6 +11,7 @@ public @interface Command {
 
     String name();
     String description() default "";
+    boolean isListed() default true;
     boolean isAdmin() default false;
 
 }

@@ -5,14 +5,16 @@ import java.lang.reflect.Method;
 public final class SimpleCommand {
 
     private final String name, desription;
+    private final boolean isListed;
     private final boolean admin;
     private final Object object;
     private final Method method;
 
-    public SimpleCommand(String name, String desription, boolean admin, Object object, Method method) {
+    public SimpleCommand(String name, String desription, boolean isListed, boolean admin, Object object, Method method) {
         super();
         this.name = name;
         this.desription = desription;
+        this.isListed = isListed;
         this.admin = admin;
         this.object = object;
         this.method = method;
@@ -24,6 +26,10 @@ public final class SimpleCommand {
 
     public String getDesription() {
         return desription;
+    }
+
+    public boolean isListed() {
+        return isListed;
     }
 
     public boolean isAdmin() {

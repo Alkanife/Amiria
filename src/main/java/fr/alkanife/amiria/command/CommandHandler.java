@@ -22,7 +22,7 @@ public final class CommandHandler {
         return commandMap.values();
     }
 
-    public int executedCommands = 0;
+    private int executedCommands = 0;
 
     public void registerCommands(Object object) {
         for (Method method : object.getClass().getDeclaredMethods()) {
@@ -31,7 +31,7 @@ public final class CommandHandler {
 
                 method.setAccessible(true);
 
-                SimpleCommand simpleCommand = new SimpleCommand(command.name(), command.description(), command.isAdmin(), object, method);
+                SimpleCommand simpleCommand = new SimpleCommand(command.name(), command.description(), command.isListed(), command.isAdmin(), object, method);
 
                 commandMap.put(command.name(), simpleCommand);
             }
@@ -89,4 +89,7 @@ public final class CommandHandler {
         return commandMap.get(commandName);
     }
 
+    public int getExecutedCommands() {
+        return executedCommands;
+    }
 }

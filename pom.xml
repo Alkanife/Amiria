@@ -6,7 +6,7 @@
 
     <groupId>fr.alkanife.amiria</groupId>
     <artifactId>Amiria</artifactId>
-    <version>1.1-INDEV</version>
+    <version>1.2</version>
     <packaging>jar</packaging>
     <build>
         <plugins>
