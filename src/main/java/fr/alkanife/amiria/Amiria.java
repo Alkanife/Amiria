@@ -19,7 +19,7 @@ public class Amiria {
     private static CommandHandler commandHandler = new CommandHandler();
     private static CharacterManager characterManager = new CharacterManager();
 
-    private static String version = "1.2";
+    private static String version = "1.2.1";
 
     private static String enyxia = "341997146519633922";
     private static String hrp = "342148162972024844";

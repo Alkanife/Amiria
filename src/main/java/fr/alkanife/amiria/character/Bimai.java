@@ -14,12 +14,12 @@ public class Bimai extends Character {
 
     @Override
     public String title() {
-        return "Papillon sanglant";
+        return "Prêtresse sanglante";
     }
 
     @Override
     public String race() {
-        return "Humain";
+        return "Humaine";
     }
 
     @Override
@@ -39,12 +39,12 @@ public class Bimai extends Character {
 
     @Override
     public int floor() {
-        return -1;
+        return 39;
     }
 
     @Override
     public String specialization() {
-        return "Mage, Assassin";
+        return "Mage Assassin";
     }
 
     @Override
@@ -59,22 +59,22 @@ public class Bimai extends Character {
 
     @Override
     public String characterTraits() {
-        return "Elle est très calme, ce qui la rend très mystérieuse. Elle parle peu, mais quand elle ouvre la bouche, ses mots ont un impact. Elle est très intelligente et capable d'analyser une situation rapidement.";
+        return "Bimai est toujours très calme. Elle parle peu, mais quand elle le fait, ses mots ont toujours une importance. Bien qu’elle soit une prêtresse, elle n’a pourtant aucune fois en une quelconque divinité. Bimai n’hésite jamais à faire ce qu’elle a à faire, même si ça lui implique de devoir mourir. Elle est très proche d’Hanyûu Thatameth, qui a, pendant longtemps, remplacé, en quelques sortes, sa conscience.";
     }
 
     @Override
     public String aspect() {
-        return "Cheveux roux, 1m65, porte un kimono rose et des habits de pretresse, yeux rouges";
+        return "Bimai a les cheveux roux, a la peau très blanche et est plutôt grande, porte un kimono rose et des habits de prêtresse, yeux rouges.";
     }
 
     @Override
     public String ownPower() {
-        return "Manipulation du sang a l'aide d'une blessure. [Talent caché: Réserves de sang ! : Bimaï stocke le sang de ses victimes pour des raisons encore inconnues.]";
+        return "Bimai possède l’habilité de manipuler le sang. Les limites de ces pouvoirs ne sont pas réellement définies.";
     }
 
     @Override
     public String state() {
-        return "Absorbée par Hanyûu (S4-S5)";
+        return "En vie";
     }
 
     @Override

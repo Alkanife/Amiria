@@ -14,12 +14,12 @@ public class WrongSheele extends Character {
 
     @Override
     public String title() {
-        return "Clone vivant";
+        return "Clone de Rubis";
     }
 
     @Override
     public String race() {
-        return "Clone de Rubis";
+        return "Clone";
     }
 
     @Override
@@ -39,17 +39,17 @@ public class WrongSheele extends Character {
 
     @Override
     public int floor() {
-        return -1;
+        return 33;
     }
 
     @Override
     public String specialization() {
-        return "Mage, Duelliste";
+        return "Mage Duelliste";
     }
 
     @Override
     public String weapon() {
-        return "Copie d'Atalante (faux des dieux déchus)";
+        return "Copie d'Atalante, Faux des dieux déchus";
     }
 
     @Override
@@ -59,12 +59,12 @@ public class WrongSheele extends Character {
 
     @Override
     public String characterTraits() {
-        return "Patient et agréable, Wrong Sheele est une version plus équilibrée psychologiquement que l'original.";
+        return "Wrong Sheele est une version plus douce et patiente de Sheele Cavalies. Il est entièrement dévoué à Maureen Mojito, qui est son invocatrice. Tout ce qui ne la concerne pas de près ou de loin n’a aucune réelle importance. Il n’a cependant pas conscience d’être lui-même un clone de Sheele, et est donc très hostile envers ce dernier.";
     }
 
     @Override
     public String aspect() {
-        return "Jeune homme aux cheveux noirs, au regard dur et verdâtre et de taille moyenne prêtant toujours une veste de fourure.";
+        return "Contrairement à Sheele Cavalies, Wrong Sheele n’a aucune affinité avec les ténèbres. Ainsi donc, ses cheveux n’ont jamais noirci. Pour ce qui est des vêtements, il porte des répliques exactes de ceux de son original. Sur le dos de sa main droite se trouve un rubis, signe de son lien avec sa créatrice.";
     }
 
     @Override
@@ -74,7 +74,7 @@ public class WrongSheele extends Character {
 
     @Override
     public String state() {
-        return "Assassiné par Yuu (S2-S2)";
+        return "En vie";
     }
 
     @Override
@@ -84,7 +84,7 @@ public class WrongSheele extends Character {
 
     @Override
     public String ownerInspiration() {
-        return "Sheele (Akame ga kill!)";
+        return "Sheele (Akame ga kill!), Phospholite (Houseki no Kuni), Ruby Rose (RWBY)";
     }
 
     @Override

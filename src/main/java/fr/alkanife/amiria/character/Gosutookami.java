@@ -14,12 +14,12 @@ public class Gosutookami extends Character {
 
     @Override
     public String title() {
-        return null;
+        return "Grand loup blanc";
     }
 
     @Override
     public String race() {
-        return "Yokai";
+        return "Revenant";
     }
 
     @Override
@@ -39,7 +39,7 @@ public class Gosutookami extends Character {
 
     @Override
     public int floor() {
-        return -1;
+        return 29;
     }
 
     @Override
@@ -54,27 +54,27 @@ public class Gosutookami extends Character {
 
     @Override
     public String secondaryWeapon() {
-        return "Griffes";
+        return "Crocs et griffes";
     }
 
     @Override
     public String characterTraits() {
-        return "Vif, impuslif";
+        return "Gosutookami étant un loup, possédant un instinct de prédateur, est très vif et impulsif. Toutefois, ce dernier est capable de comprendre et d’user du langage humain, ce qui souligne qu’il est capable d’apprendre. Cependant, la plupart du temps, son aspect animal prendra toujours le dessus.";
     }
 
     @Override
     public String aspect() {
-        return "Loup fantôme blanc, avec une chaîne autour du cou les yeux blancs et noirs";
+        return "Gosutookami est un loup blanc tout ce qu’il y a de plus classique, aux yeux bleus, et ne possédant aucune particularité autre que sa légère transparence.";
     }
 
     @Override
     public String ownPower() {
-        return null;
+        return "L’unique pouvoir de Gosutookami est d’interagir avec les choses matérielles, alors que, lui-même, est immatériel dû à sa condition de revenant.";
     }
 
     @Override
     public String state() {
-        return "Tué par Ravenn (S5-S5)";
+        return "En vie";
     }
 
     @Override

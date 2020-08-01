@@ -44,12 +44,12 @@ public class Kuyu extends Character {
 
     @Override
     public String specialization() {
-        return "Duelliste, Mage";
+        return "Duelliste Mage";
     }
 
     @Override
     public String weapon() {
-        return "Yoshido (lame de Kudo)";
+        return "Yoshido, Lame de Kudo";
     }
 
     @Override
@@ -59,22 +59,22 @@ public class Kuyu extends Character {
 
     @Override
     public String characterTraits() {
-        return "Patient, doux et accueillant, mais cache au fond de lui les ferveurs du combat de Kudo";
+        return "KuYu est quelqu’un qui a beaucoup hérité des valeurs de son père adoptif, Sheele Cavalies. Il est quelqu’un de doux et agréable, mais cache au fond de lui un plaisir malsain pour le combat. Il n’est pas très malin, il est même très naïf, ce qu’on lui reproche souvent. Il a tendance à s’obstiner à voir le bien en chacun, même pour les gens malsains.";
     }
 
     @Override
     public String aspect() {
-        return "Jeune homme aux cheveux blancs, au regard simple et mesure environ 1m65";
+        return "KuYu est très petit, il fait à peu de chose près la même taille que Kanna lorsqu’elle était Enfant. Il a les cheveux châtains et les yeux gris et vide, similaires à ceux d’un poisson mort. Il porte la veste de Sheele et des bas en jean.";
     }
 
     @Override
     public String ownPower() {
-        return null;
+        return "KuYu a développé son pouvoir dans la Tour Infinie, ou plutôt devrait-on dire « ses pouvoirs ». KuYu a hérité d’une immunité à la lumière, aux ténèbres et au néant de la part de ses deux parents originels. Mais il a également hérité de leurs capacités.";
     }
 
     @Override
     public String state() {
-        return "Assassiné par Andrea (S1-S6)";
+        return "En vie";
     }
 
     @Override
@@ -84,7 +84,7 @@ public class Kuyu extends Character {
 
     @Override
     public String ownerInspiration() {
-        return "Kudo (Enyxia), Yudo (Enyxia)";
+        return "Kudo (Enyxia), Yudo (Enyxia), Tatsumi (Akame ga kill), Naho (Corpse Party)";
     }
 
     @Override

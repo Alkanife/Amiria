@@ -39,7 +39,7 @@ public class Morgiana extends Character {
 
     @Override
     public int floor() {
-        return -1;
+        return 46;
     }
 
     @Override
@@ -59,22 +59,22 @@ public class Morgiana extends Character {
 
     @Override
     public String characterTraits() {
-        return "Elle dit toujours ce qu'elle pense, est violente et est impulsive";
+        return "Morgiana est quelqu’un d’imprévisible, elle dit toujours ce qu’elle pense, est violente, et déteste beaucoup de choses. Elle ne semble pas apprécier grand-monde. Elle semble avoir une façon de penser et de voir les choses bien à elle, ce qui n’aide pas les autres à l’approcher/la comprendre. Morgiana est irrévérencieuse, ne crois plus en aucun Dieu et en aucun Homme. Toutefois, elle répète souvent un nom avec beaucoup de respect, bien que cette personne n’est jamais été vue sur l’entièreté du monde d’Enyxia et semble décédée.";
     }
 
     @Override
     public String aspect() {
-        return "Femme de petite taille, semble jeune, porte des chaines brisées aux jambes et aux poignets, et aux cheveux roux";
+        return "Morgiana est une femme de petite taille, à laquelle on répète souvent qu’elle est une « naine ». Elle a les yeux et les cheveux roux. Elle porte le plus souvent une robe blanche et des chaines de métal aux poignets et aux chevilles. Malgré son passé, elle n’a aucune cicatrice visible sur le corps ce qui est une immense prouesse.";
     }
 
     @Override
     public String ownPower() {
-        return null;
+        return "Dû à sa nature de Fanalis pure héritée de sa mère, Morgiana ne possède aucun pouvoir.";
     }
 
     @Override
     public String state() {
-        return "Expiration d'âme (S1-S1) / Explosée par Kashya (S2-S5)";
+        return "En vie";
     }
 
     @Override
@@ -84,7 +84,7 @@ public class Morgiana extends Character {
 
     @Override
     public String ownerInspiration() {
-        return "Morgiana (Magi: The Labyrinth of Magic)";
+        return "Morgiana (Magi: The Labyrinth of Magic), Arthur Schopenhauer (IRL), Asta (Black Clover)";
     }
 
     @Override

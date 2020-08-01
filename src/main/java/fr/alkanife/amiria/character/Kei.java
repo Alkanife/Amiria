@@ -39,7 +39,7 @@ public class Kei extends Character {
 
     @Override
     public int floor() {
-        return -1;
+        return 23;
     }
 
     @Override
@@ -49,7 +49,7 @@ public class Kei extends Character {
 
     @Override
     public String weapon() {
-        return "Épée";
+        return "Épée à deux mains";
     }
 
     @Override
@@ -59,22 +59,22 @@ public class Kei extends Character {
 
     @Override
     public String characterTraits() {
-        return "Kei semble joyeux, mais suit les ordres à la lettre lorqu'il s'agit d'éliminer une cible";
+        return "Kei est quelqu’un de joyeux et est toujours loyal à ses convictions et ses croyances. Il est très optimiste, ce que les gens ont tendance à lui trouver ridicule, étant donné ses compétences minables en combat, à l’exception de sa supérieure directe (Morgiana Cavalies), pour laquelle il a un immense respect. Kei est également très honnête, et n’hésite pas à confronter quelqu’un lorsqu’il estime que cette personne est en tort. Il pense que son sens de l’honneur le conserve de faire des mauvais choix, mais en réalité, il se contente simplement d’écouter ce que son cœur lui dicte.";
     }
 
     @Override
     public String aspect() {
-        return "Grande taille, blond, peu musclé, tenue blanche";
+        return "Kei est un homme de taille moyenne, à la couleur tannée, aux cheveux blonds et aux yeux topazes. Il porte deux boucles d’oreilles ayant appartenu à sa mère avant qu’il n’entre dans l’armée désertique. Il porte d’ailleurs la tenue d’un simple soldat, à l’exception qu’il ne porte pas d’armure.";
     }
 
     @Override
     public String ownPower() {
-        return null;
+        return "Kei aimerait beaucoup posséder un pouvoir. Mais il n’est qu’un simple soldat tout ce qu’il y a de plus banal.";
     }
 
     @Override
     public String state() {
-        return "Assassiné par Kashya (S5-S5)";
+        return "En vie";
     }
 
     @Override

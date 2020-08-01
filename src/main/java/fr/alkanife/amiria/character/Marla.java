@@ -39,12 +39,12 @@ public class Marla extends Character {
 
     @Override
     public int floor() {
-        return -1;
+        return 25;
     }
 
     @Override
     public String specialization() {
-        return "Assassin, Mage";
+        return "Assassin Mage";
     }
 
     @Override
@@ -64,17 +64,17 @@ public class Marla extends Character {
 
     @Override
     public String aspect() {
-        return "Petite fille aux cheveux couramment bleus, elle porte le plus souvent une robe assortie à cette couleur. Ses yeux peuvent passer du bleu au rouge quand elle use de ses pouvoirs.";
+        return "Marla est une petite fille aux cheveux bleu océan, elle porte le plus souvent une robe assortie à cette couleur, mais avec des nuances plus sombres. Ses yeux peuvent passer du bleu au rouge quand elle use de ses pouvoirs.";
     }
 
     @Override
     public String ownPower() {
-        return "Manipulation de la glace";
+        return "Marla est capable de manipuler la glace à condition qu’elle ait de l’eau à proximité.";
     }
 
     @Override
     public String state() {
-        return "Assassinée par Yuu (S6-S7)";
+        return "En vie";
     }
 
     @Override
@@ -84,7 +84,7 @@ public class Marla extends Character {
 
     @Override
     public String ownerInspiration() {
-        return "Yoshino (Date A Live), Kohina Hiruko (Black Bullet), Esdeath (Akame ga Kill!), Enyxia Cavalies (Enyxia)";
+        return "Yoshino (Date A Live), Kohina Hiruko (Black Bullet), Esdeath (Akame ga Kill!), Enyxia Cavalies (Enyxia), Katara (Avatar: The Last Airbender)";
     }
 
     @Override

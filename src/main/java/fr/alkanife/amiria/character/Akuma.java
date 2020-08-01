@@ -39,7 +39,7 @@ public class Akuma extends Character {
 
     @Override
     public int floor() {
-        return -1;
+        return 13;
     }
 
     @Override
@@ -49,7 +49,7 @@ public class Akuma extends Character {
 
     @Override
     public String weapon() {
-        return "Sabre";
+        return "Akuma manie un sabre que Ravenn avait fait forgé pour lui de son vivant.";
     }
 
     @Override
@@ -59,22 +59,22 @@ public class Akuma extends Character {
 
     @Override
     public String characterTraits() {
-        return "Ce jeune homme est très déterminé et combattif, il est impossible de briser sa volonté. Il cache une sympathie profonde sous une facette dure.";
+        return "Akuma n’est pas quelqu’un d’agréable en dehors du cadre de sa famille adoptive. En effet, pour on ne sait quelle raison, il parait toujours en colère et méfiant. Il est réfléchi, mais il semblerait qu’Akuma ne sache pas vraiment contrôler les émotions fortes, malgré les efforts de ses mères.";
     }
 
     @Override
     public String aspect() {
-        return "Jeune homme aux yeux et cheveux noir ébène, sa peau est blanchâtre. Il est plutôt grand.";
+        return "Akuma est un jeune homme aux cheveux bruns et aux yeux noirs, portant toujours une veste d’un bleu très foncé et des habits citadins. Il est assez grand, ce qui lui évite généralement les ennuis, car, étant toujours blasé / en colère, Akuma s’attire pas mal d’ennemi avec son attitude.";
     }
 
     @Override
     public String ownPower() {
-        return "Augmenter sa vitesse sur une courte durée";
+        return "La capacité spéciale d'Akuma est d'augmenter sa vitesse sur une durée courte et il peut atteindre une vitesse telle qu’il ne puisse plus maitriser sa course.";
     }
 
     @Override
     public String state() {
-        return null;
+        return "En vie";
     }
 
     @Override

@@ -49,7 +49,7 @@ public class William extends Character {
 
     @Override
     public String weapon() {
-        return "Mathiarka (l'épée de guerre)";
+        return "Mathiarka, l'épée de guerre";
     }
 
     @Override
@@ -69,7 +69,7 @@ public class William extends Character {
 
     @Override
     public String ownPower() {
-        return null;
+        return "Ne possède aucun pouvoir.";
     }
 
     @Override

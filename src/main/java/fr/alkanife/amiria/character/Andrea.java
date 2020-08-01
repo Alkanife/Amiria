@@ -14,7 +14,7 @@ public class Andrea extends Character {
 
     @Override
     public String title() {
-        return "Tueuse-chasseresse";
+        return "Tranche-lames";
     }
 
     @Override
@@ -39,7 +39,7 @@ public class Andrea extends Character {
 
     @Override
     public int floor() {
-        return -1;
+        return 25;
     }
 
     @Override
@@ -69,12 +69,12 @@ public class Andrea extends Character {
 
     @Override
     public String ownPower() {
-        return "Création d’armes blanches, manipulation de la glace et manipulation du feu";
+        return "Création d’armes blanches, manipulation de la glace et manipulation du feu.";
     }
 
     @Override
     public String state() {
-        return "Assassinée par Yuu (S6-S6)";
+        return "En vie";
     }
 
     @Override
@@ -84,7 +84,7 @@ public class Andrea extends Character {
 
     @Override
     public String ownerInspiration() {
-        return "Enju Aihara (Black Bullet), Kohina Hiruko (Black Bullet), Yuu Cavalies (Enyxia)";
+        return "Enju Aihara (Black Bullet), Kohina Hiruko (Black Bullet), Yuu Cavalies (Enyxia), Shoto Todoroki (My Hero Academia)";
     }
 
     @Override

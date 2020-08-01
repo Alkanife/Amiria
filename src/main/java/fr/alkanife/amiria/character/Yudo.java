@@ -34,17 +34,17 @@ public class Yudo extends Character {
 
     @Override
     public String sex() {
-        return null;
+        return "Les Enfantiques n’ont pas de sexe défini, mais sont d’apparence masculine.";
     }
 
     @Override
     public int floor() {
-        return 0;
+        return 50;
     }
 
     @Override
     public String specialization() {
-        return "Mage, Duelliste";
+        return "Mage Duelliste";
     }
 
     @Override
@@ -59,12 +59,12 @@ public class Yudo extends Character {
 
     @Override
     public String characterTraits() {
-        return "Yudo est une source lumineuse, sa personnalité sera donc aussi claire que l'élément même, \"douce\" et \"calme\", les seuls mots qui peuvent le déterminer.";
+        return "Yudo est une source lumineuse, sa personnalité sera donc aussi claire que l'élément même, \"douce\" et \"agréable\", les seuls mots qui peuvent le déterminer. Cependant, Yudo cache un secret lorsqu’il s’énerve. Sa forme avatar est en réalité une forme où il est dénué d’aucune autre émotion que la haine, et n’a qu’une seule envie : faire table-rase. C’est donc pour cette raison que personne ne veut énerver Yudo.";
     }
 
     @Override
     public String aspect() {
-        return null;
+        return "Yudo a l’apparence d’un jeune homme très pale, aux yeux d’un gris très clair, des cheveux mi-longs blancs, en bref, tout dans son apparence est fait pour rappeler la lumière. Il porte à peu de choses près (principalement la couleur change) les mêmes vêtements que son frère Kudo.";
     }
 
     @Override
@@ -74,7 +74,7 @@ public class Yudo extends Character {
 
     @Override
     public String state() {
-        return "Assassiné par Sheele (S1-S1)";
+        return "En vie";
     }
 
     @Override

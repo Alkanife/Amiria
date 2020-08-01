@@ -44,7 +44,7 @@ public class Gaia extends Character {
 
     @Override
     public String specialization() {
-        return "Mage, Duelliste";
+        return "Mage Duelliste";
     }
 
     @Override

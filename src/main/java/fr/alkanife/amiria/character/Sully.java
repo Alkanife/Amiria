@@ -1,6 +1,7 @@
 package fr.alkanife.amiria.character;
 
 public class Sully extends Character {
+
     @Override
     public String lastName() {
         return "Albatrum";
@@ -38,12 +39,12 @@ public class Sully extends Character {
 
     @Override
     public int floor() {
-        return -1;
+        return 11;
     }
 
     @Override
     public String specialization() {
-        return "Mage, Assassin";
+        return "Mage Assassin";
     }
 
     @Override
@@ -58,7 +59,7 @@ public class Sully extends Character {
 
     @Override
     public String characterTraits() {
-        return "Insensible, silencieuse et calme, elle ne répliquera généralement pas à l'oral sauf si cela s'avère necessaire.";
+        return "Sully est plutôt insensible, elle est très silencieuse et très calme, elle ne répliquera généralement pas à l'oral sauf si cela s'avère nécessaire. Elle semble avoir une idée très claire de ce qu’est la justice, et est intransigeante sur le sujet. Sully est également très cupide : Lorsqu’elle souhaite quelque chose, elle fera tout ce qui est en son pouvoir pour l’obtenir.";
     }
 
     @Override
@@ -73,7 +74,7 @@ public class Sully extends Character {
 
     @Override
     public String state() {
-        return "Assassinée par Gaia (S1-S1)";
+        return "En vie";
     }
 
     @Override
@@ -83,7 +84,7 @@ public class Sully extends Character {
 
     @Override
     public String ownerInspiration() {
-        return "Hinata Hyûuga (Naruto)";
+        return "Hinata Hyûuga (Naruto), Greed (FullMetal Alchemist: Brotherhood), Le Gourmet (Tokyo Ghoul)";
     }
 
     @Override

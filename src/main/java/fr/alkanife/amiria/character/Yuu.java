@@ -54,27 +54,27 @@ public class Yuu extends Character {
 
     @Override
     public String secondaryWeapon() {
-        return null;
+        return "Variables";
     }
 
     @Override
     public String characterTraits() {
-        return "Un esprit maléfique combinée à une réactivité d'assassin, un intellect de génie, une force de Fanalis, et une pitié inexistante fait d'elle une des personnes les plus dangereuses qu'Enyxia ai connu à ce jour.";
+        return "Yuu a un esprit très vif, des réflexes incroyables, et que peu d’émotion. En effet, elle a été privée de ses sentiments très vite/tôt. Elle est très intelligente et maline, capable d’elaborer une stratégie en prevoyant les actions de son opposant. Toutefois, dans la tour, Yuu retrouve peu à peu ses sentiments, les premiers étant la douleur, la peur, le regret et la culpabilité.";
     }
 
     @Override
     public String aspect() {
-        return "Yuu, malgré son age avancé et quelques cicatrices légères, est une très belle femme, bien formée, aux cheveux bruns et aux yeux rouges. Elle est toutefois un peu plus grande que la moyenne.";
+        return "Yuu, malgré son âge avancé et quelques cicatrices légères, est une très belle femme, bien conservée par le temps, Elle a les cheveux bruns et les yeux rouges (c’est en réalité dû à au reflet de son sang, car Yuu a perdu la pigmentation de ses yeux). Elle est un peu plus grande que la moyenne et sa peau est très blanche. Elle porte un ensemble noir et blanc aux reliefs rouges.";
     }
 
     @Override
     public String ownPower() {
-        return "Yuu a la capacité d'absorber la puissance.";
+        return "Yuu a la capacité d'absorber la puissance, d’user des cinq éléments. Elle est également, avec énormément d’efforts, capable de matérialiser sa dimension de poche, la Dévoration.";
     }
 
     @Override
     public String state() {
-        return "Assassinée par Sheele (S1-S3) / En vie (S5-...)";
+        return "En vie";
     }
 
     @Override

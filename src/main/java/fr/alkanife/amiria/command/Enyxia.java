@@ -211,12 +211,23 @@ public class Enyxia {
         if (character.image() != null)
             fiche.append("**IMAGE REPRÉSENTATIVE:** ").append("https://share.alkanife.fr/amiria/").append(character.image());
 
-        //TODO
-        /*if (fiche.length() > 2000) {
+        if (fiche.length() < 2000) {
+            message.getChannel().sendMessage(fiche).queue();
+        } else {
+            // TEMPORARY CODE, TO CHANGE QUICKLY
+            // TEMPORARY CODE, TO CHANGE QUICKLY
+            // TEMPORARY CODE, TO CHANGE QUICKLY
+            // TEMPORARY CODE, TO CHANGE QUICKLY
+            // TEMPORARY CODE, TO CHANGE QUICKLY
+            // TEMPORARY CODE, TO CHANGE QUICKLY
+            String[] splitted = fiche.toString().split("ASPECT PHYSIQUE:");
 
-        }*/
+            String part1 = splitted[0].substring(0, splitted[0].length() - 2);
+            String part2 = "**POUVOIR PROPRE:" + splitted[1];
 
-        message.getChannel().sendMessage(fiche).queue();
+            message.getChannel().sendMessage(part1).queue();
+            message.getChannel().sendMessage(part2).queue();
+        }
     }
 
 }

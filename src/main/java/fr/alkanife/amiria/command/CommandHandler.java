@@ -82,6 +82,7 @@ public final class CommandHandler {
             }
         } catch (Exception exception) {
             Log.error(exception);
+            message.getChannel().sendMessage("Je n'ai pas réussi a charger cette fiche. Vous avez le droit d'aller taper <@437284414519640065>.").queue();
         }
     }
 

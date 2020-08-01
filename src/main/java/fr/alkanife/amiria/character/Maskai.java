@@ -44,7 +44,7 @@ public class Maskai extends Character {
 
     @Override
     public String specialization() {
-        return "Duelliste, Assassin";
+        return "Duelliste Assassin";
     }
 
     @Override

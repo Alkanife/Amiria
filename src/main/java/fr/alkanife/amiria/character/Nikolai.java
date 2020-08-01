@@ -39,12 +39,12 @@ public class Nikolai extends Character {
 
     @Override
     public int floor() {
-        return -1;
+        return 22;
     }
 
     @Override
     public String specialization() {
-        return "Duelliste, Mage";
+        return "Duelliste Mage";
     }
 
     @Override
@@ -54,27 +54,27 @@ public class Nikolai extends Character {
 
     @Override
     public String secondaryWeapon() {
-        return "Magie";
-    }
-
-    @Override
-    public String characterTraits() {
-        return "Tout ce que l'on sait de Nikolaï est qu'il a tendance à manipuler les gens qui l'entourent";
-    }
-
-    @Override
-    public String aspect() {
         return null;
     }
 
     @Override
+    public String characterTraits() {
+        return "Nikolai Hitch est un grand manipulateur. Il est d’ailleurs très doué pour mentir pour tout et n’importe quoi. Le problème, c’est qu’avec le temps, il est devenu un menteur pathologique, et s’est mis à croire en ses propres mensonges. Ainsi, lorsqu’il a certifié être l’héritier du défunt Roi Asher IV, Il l’est réellement devenu. Nikolaï ne sait plus qui il est, et s’est rangé du côté de la cruauté, du pouvoir et des conflits car c’était pour lui le seul moyen de se sentir vivant.";
+    }
+
+    @Override
+    public String aspect() {
+        return "Nikolaï prétend être un grand brulé sensible au soleil, raison pour laquelle il porte une grande combinaison noire sur la totalité du corps et un masque, pour se « protéger ».";
+    }
+
+    @Override
     public String ownPower() {
-        return "Invocations";
+        return "Nikolaï a le pouvoir d’invoquer des créatures temporairement en l’échange d’une partie de son mana.";
     }
 
     @Override
     public String state() {
-        return "Assassiné par Asarim (S5-S5)";
+        return "En vie";
     }
 
     @Override

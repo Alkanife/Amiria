@@ -39,7 +39,7 @@ public class Sheele extends Character {
 
     @Override
     public int floor() {
-        return -1;
+        return 8;
     }
 
     @Override
@@ -49,7 +49,7 @@ public class Sheele extends Character {
 
     @Override
     public String weapon() {
-        return "Atalante (faux des dieux déchus)";
+        return "Atalante, Faux des dieux déchus";
     }
 
     @Override
@@ -59,22 +59,22 @@ public class Sheele extends Character {
 
     @Override
     public String characterTraits() {
-        return "Patient,  impulsif mais chaleureux, Sheele cache au plus profond de lui tous les tourments de son passé";
+        return "Sheele est une personne qui peut se montrer très patiente, cependant, il lui arrive d’être impulsif et de devenir violent. Parfois chaleureux, Sheele cache au plus profond de lui tous les tourments de son passé et tente de s’en affranchir. Sheele est quelqu’un qui a très souvent peur, ou qui appréhende souvent le futur. Sheele ne place aucune fois dans les dieux, en fait, il pense qu’ils sont morts. Il est très malin et analyse toujours la situation, tentant de cerner les capacités et les motivations de la personne qu’il a en face de lui. Il est dur de le piéger, étant donné qu’il est un espion et un combattant aguerri. Depuis la mort de sa seconde femme (Sully Albatrum), Sheele s’est juré de n’avoir d’yeux que pour ses enfants, qu’il élève, protège, et entraine, sans accorder son attention à quoi que ce soit qui ne les concerne pas de près ou de loin.";
     }
 
     @Override
     public String aspect() {
-        return "Jeune homme aux cheveux nours, au regard dur et verdâtre et de taille moyenne prêtant toujours une veste de fourure.";
+        return "Sheele est un homme moyen, au teint pâle, aux cheveux noirs et au regard émeraude. Il porte toujours une veste de fourrure brune et un collier militaire d’argent au cou, ce dernier appartenait à son père.";
     }
 
     @Override
     public String ownPower() {
-        return "Changer de forme pour être plus puissant, contrôler les éléments, doubler sa puissance à la mort d'un proche";
+        return "Sheele peut user de différentes formes pour être plus puissant (Renégat, Assassin, Sombrale, Ultime), peut contrôler les éléments, double sa puissance à la mort d'un proche. Il maitrise également la magie prohibée des Darkenings au point qu’il puisse rivaliser avec la maitrise de l’Enfantique des Ténèbres.";
     }
 
     @Override
     public String state() {
-        return "Assassiné par Yuu (S1-S3)";
+        return "En vie";
     }
 
     @Override

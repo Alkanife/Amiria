@@ -14,12 +14,12 @@ public class Enyxia extends Character {
 
     @Override
     public String title() {
-        return "Opposition";
+        return "Enfant du monde";
     }
 
     @Override
     public String race() {
-        return "Humain";
+        return "Humaine";
     }
 
     @Override
@@ -39,12 +39,12 @@ public class Enyxia extends Character {
 
     @Override
     public int floor() {
-        return -1;
+        return 47;
     }
 
     @Override
     public String specialization() {
-        return "Assassin, Duelliste";
+        return "Assassin Duelliste";
     }
 
     @Override
@@ -59,22 +59,22 @@ public class Enyxia extends Character {
 
     @Override
     public String characterTraits() {
-        return "Calme, réfléchie et intelligente, Enyxia est une génie du combat, déployant tactique et rispostes en un clignement d'yeux";
+        return "Enyxia est quelqu’un de très calme, de très détendu. Elle réfléchit toujours avant d’agir. Elle est très aimable et sociable. En bref, elle est le reflet de ce qu’aurait pu devenir sa sœur jumelle, Yuu, si l’on ne l’avait pas privée de ses émotions. Enyxia est à l’écoute et essaie toujours de comprendre son interlocuteur. Son seul réel défaut est qu’elle a une fâcheuse tendance à pardonner les autres trop vite.";
     }
 
     @Override
     public String aspect() {
-        return "Enyxia semble très jeune, aucune cicatrices, elle est très jolie et semble même sociable. Elle a les yeux bleus et des cheveux chatains, elle est de taille moyenne.";
+        return "Enyxia, malgré son age avancé et quelques cicatrices légères, est une très belle femme, bien conservée par le temps. Elle avait autrefois les cheveux bruns, mais ces derniers se sont légèrement éclaircis pour laisser place à un très joli châtain. Elle est un peu plus grande que la moyenne et sa peau est très pale. Ses yeux, contrairement à sa sœur, n’ont pas perdu leur pigmentation et ont gardé leur magnifique bleu azur. Elle porte le plus souvent une veste noire, avec au-dessous des survêtements blancs. Elle semble également beaucoup donner d’importance à son écharpe bleue à carreaux, qu’elle garde tout le temps sur elle.";
     }
 
     @Override
     public String ownPower() {
-        return "Capacité à manipuler un individu psychologiquement à sa guise.";
+        return "Enyxia est capable de manipuler quelqu’un à sa guise. Il n’y a malheureusement pas beaucoup d’information sur la façon dont elle l’utilise, étant donné qu’elle ne semble pas apprécier le fait d’y recourir, bien qu’elle admette l’utiliser pour connaitre les véritables intentions des gens. Son pouvoir semble donc ne pas se limiter au simple contrôle mental.";
     }
 
     @Override
     public String state() {
-        return "Assassinée par Yuu (S1-S3) / Assassinée par Yuu (S7-S7)";
+        return "En vie";
     }
 
     @Override
