@@ -1,4 +1,4 @@
-package fr.alkanife.amiria.command;
+package fr.alkanife.amiria;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -11,7 +11,6 @@ public @interface Command {
 
     String name();
     String description() default "";
-    boolean isListed() default true;
     boolean isAdmin() default false;
 
 }
