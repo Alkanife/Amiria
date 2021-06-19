@@ -1,6 +1,6 @@
-package fr.alkanife.amiria;
+package fr.alkanife.amiria.characters;
 
-public class CharacterSheet {
+public class Character {
 
     private String full_name;
     private String title;
@@ -19,10 +19,10 @@ public class CharacterSheet {
     private String owner_notes;
     private boolean representation_image;
 
-    public CharacterSheet() {
+    public Character() {
     }
 
-    public CharacterSheet(String full_name, String title, String race, String age, String sex, String floor, String specializations, String weapons, String character_traits, String aspect, String own_power, String state, String original_owner, String owner_inspirations, String owner_notes, boolean representation_image) {
+    public Character(String full_name, String title, String race, String age, String sex, String floor, String specializations, String weapons, String character_traits, String aspect, String own_power, String state, String original_owner, String owner_inspirations, String owner_notes, boolean representation_image) {
         this.full_name = full_name;
         this.title = title;
         this.race = race;
