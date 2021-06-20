@@ -22,7 +22,7 @@ public class Events extends ListenerAdapter {
 
         JDA jda = readyEvent.getJDA();
 
-
+        //search enyxia
         Guild enyxia = jda.getGuildById("341997146519633922");
 
         if (enyxia == null) {
@@ -34,7 +34,7 @@ public class Events extends ListenerAdapter {
         Amiria.setEnyxia(enyxia);
         Logs.info("Enyxia was found, " + enyxia.getMemberCount() + " members");
 
-
+        //search megapolice role
         Object megapoliceID = Amiria.getConfigurationValues().get("megapolice-id");
 
         if (megapoliceID == null) {
@@ -54,7 +54,7 @@ public class Events extends ListenerAdapter {
         Amiria.setMegapolice(megapolice);
         Logs.info(megapolice.getName() + " role was found");
 
-
+        //search english role
         Object englishID = Amiria.getConfigurationValues().get("english-id");
 
         if (englishID == null) {
@@ -74,7 +74,7 @@ public class Events extends ListenerAdapter {
         Amiria.setEnglish(english);
         Logs.info(english.getName() + " role was found");
 
-
+        //search #hrp channel
         Object hrpID = Amiria.getConfigurationValues().get("hrp-id");
 
         if (hrpID == null) {
@@ -94,31 +94,11 @@ public class Events extends ListenerAdapter {
         Amiria.setHrp(hrp);
         Logs.info("#" + hrp.getName() + " channel was found");
 
-
-        Object notificationsID = Amiria.getConfigurationValues().get("notifications-id");
-
-        if (notificationsID == null) {
-            Logs.error("Invalid configuration: notifications-id is null");
-            jda.shutdown();
-            return;
-        }
-
-        TextChannel notifications = enyxia.getTextChannelById(String.valueOf(notificationsID));
-
-        if (notifications == null) {
-            Logs.error("#amiria-notifications was not found");
-            jda.shutdown();
-            return;
-        }
-
-        Amiria.setNotifications(notifications);
-        Logs.info("#" + notifications.getName() + " channel was found");
-
-
+        //load languages
         Logs.info("Loading languages");
         Lang.load();
 
-
+        //load characters
         Logs.info("Loading characters");
         try {
             Characters.load();
@@ -126,7 +106,7 @@ public class Events extends ListenerAdapter {
             e.printStackTrace();
         }
 
-
+        //load commands
         Logs.info("Setting up commands");
         JDASlashCommands.initialize(jda, Amiria.getToken(), jda.getSelfUser().getId());
 
