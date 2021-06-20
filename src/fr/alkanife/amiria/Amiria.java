@@ -12,7 +12,7 @@ import java.util.HashMap;
 
 public class Amiria {
 
-    private static String version = "2.0";
+    private static String version = "2.0.1";
 
     private static HashMap<String, Object> configurationValues;
 
@@ -22,6 +22,7 @@ public class Amiria {
 
     private static Role megapolice;
     private static Role english;
+    private static Role people;
 
     private static TextChannel hrp;
     private static TextChannel notifications;
@@ -40,20 +41,20 @@ public class Amiria {
             configurationValues = YmlReader.read("configuration");
 
             if (configurationValues == null) {
-                Logs.error("configuration.yml not found");
+                Errors.error("configuration.yml not found");
                 return;
             }
 
             Object token = configurationValues.get("token");
 
             if (token == null) {
-                Logs.error("Invalid configuration: token is null");
+                Errors.error("Invalid configuration: token is null");
                 return;
             }
 
             Amiria.token = String.valueOf(token);
 
-            Logs.info("Connecting to Discord");
+            Logs.info("Starting JDA");
             JDABuilder jdaBuilder = JDABuilder.createDefault(Amiria.token);
             jdaBuilder.setRawEventsEnabled(true);
             jdaBuilder.setStatus(OnlineStatus.ONLINE);
@@ -62,8 +63,7 @@ public class Amiria {
             jda = jdaBuilder.build();
 
         } catch (Exception exception) {
-            Logs.error("Failed to start!");
-            exception.printStackTrace();
+            Errors.error("Failed to start!", exception);
         }
     }
 
@@ -105,6 +105,14 @@ public class Amiria {
 
     public static void setEnglish(Role english) {
         Amiria.english = english;
+    }
+
+    public static Role getPeople() {
+        return people;
+    }
+
+    public static void setPeople(Role people) {
+        Amiria.people = people;
     }
 
     public static TextChannel getHrp() {

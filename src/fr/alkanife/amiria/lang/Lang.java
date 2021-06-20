@@ -2,6 +2,7 @@ package fr.alkanife.amiria.lang;
 
 import de.cerus.jdasc.interaction.Interaction;
 import fr.alkanife.amiria.Amiria;
+import fr.alkanife.amiria.Errors;
 import fr.alkanife.amiria.Logs;
 import fr.alkanife.amiria.YmlReader;
 import net.dv8tion.jda.api.entities.Role;
@@ -16,23 +17,28 @@ public class Lang {
         load(false);
     }
 
-    public static void load(boolean reload) {
+    public static boolean load(boolean reload) {
+        int errorsThen = Errors.errors;
+
         for (Locale locale : Locale.values()) {
-            HashMap<String, Object> data = YmlReader.read(locale.toString().toLowerCase(java.util.Locale.ROOT));
 
-            if (data == null)
-                return;
+            try {
+                HashMap<String, Object> data = YmlReader.read(locale.toString().toLowerCase(java.util.Locale.ROOT));
 
-            locale.setTranslations(data);
+                if (data == null) {
+                    Errors.error("Data is null");
+                    return false;
+                }
 
-            /*locale.setTranslations(new HashMap<>());
+                locale.setTranslations(data);
+            } catch (Exception exception) {
+                Errors.error("Error while reading YML File", exception);
+            }
 
-            for (String key : data.keySet())
-                locale.getTranslations().put(key, String.valueOf(data.get(key)));*/
-
-            Logs.info((reload ? "Reloaded" : "Loaded") + " language " + locale.name() + ", " + locale.getTranslations().size() + " translations");
+            Logs.info((reload ? "(reload) " : "") + "Loaded language " + locale.name() + ", " + locale.getTranslations().size() + " translations");
         }
 
+        return errorsThen == Errors.errors;
     }
 
     public static Locale findLocale(Interaction interaction) {

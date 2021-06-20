@@ -5,6 +5,7 @@ import de.cerus.jdasc.command.ApplicationCommandOption;
 import de.cerus.jdasc.command.ApplicationCommandOptionType;
 import de.cerus.jdasc.command.CommandBuilder;
 import fr.alkanife.amiria.Amiria;
+import fr.alkanife.amiria.Logs;
 import fr.alkanife.amiria.characters.Character;
 import fr.alkanife.amiria.characters.Characters;
 import fr.alkanife.amiria.lang.Lang;
@@ -22,6 +23,8 @@ public class CharactersCommand {
                 .desc("Liste des personnages — List of characters")
                 //.option(new ApplicationCommandOption(ApplicationCommandOptionType.STRING, "creator", "Précisez l'auteur — Specify the author", false))
                 .build(), Amiria.getEnyxia().getIdLong(), interaction -> {
+
+            Logs.command(interaction);
 
             if (Lang.findLocale(interaction).getCharacters().size() == 0) {
                 interaction.respond(false, Lang.tl(interaction, "characters-command-no-characters"));

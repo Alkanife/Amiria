@@ -2,6 +2,7 @@ package fr.alkanife.amiria.characters;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import fr.alkanife.amiria.Errors;
 import fr.alkanife.amiria.Logs;
 import fr.alkanife.amiria.Utils;
 import fr.alkanife.amiria.lang.Locale;
@@ -16,8 +17,13 @@ import java.util.stream.Stream;
 
 public class Characters {
 
-    public static void load() throws IOException {
+    public static boolean load(boolean reload) {
+        int errorsThen = Errors.errors;
+
         for (Locale locale : Locale.values()) {
+            if (reload)
+                locale.setCharacters(new ArrayList<>());
+
             try (Stream<Path> paths = Files.walk(Paths.get(Utils.absolutePath() + "/characters/" + locale.name().toLowerCase(java.util.Locale.ROOT) + ""))) {
                 paths.filter(Files::isRegularFile).forEach(path -> {
 
@@ -30,15 +36,23 @@ public class Characters {
 
                         locale.getCharacters().add(character);
 
-                    } catch (IOException e) {
-                        e.printStackTrace();
+                    } catch (IOException ioException) {
+                        Errors.error("Error while reading file", ioException);
                     }
                 });
+            } catch (IOException ioException) {
+                Errors.error("Error while walking in a directory. Make sure that the '/characters/french' and '/characters/english' folders exist.", ioException);
             }
         }
 
-        for (Locale locale : Locale.values())
-            Logs.info("Loaded " + locale.getCharacters().size() + " " + locale.name() + " characters");
+        for (Locale locale : Locale.values()) {
+            int characters = locale.getCharacters().size();
+
+            if (locale.getCharacters().size() > 0)
+                Logs.info((reload ? "(reload) " : "") + "Loaded " + characters + " characters in " + locale.name());
+        }
+
+        return errorsThen == Errors.errors;
     }
 
     public static Character search(Locale locale, String name) {

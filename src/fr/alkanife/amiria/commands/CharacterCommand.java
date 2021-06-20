@@ -5,6 +5,7 @@ import de.cerus.jdasc.command.ApplicationCommandOption;
 import de.cerus.jdasc.command.ApplicationCommandOptionType;
 import de.cerus.jdasc.command.CommandBuilder;
 import fr.alkanife.amiria.Amiria;
+import fr.alkanife.amiria.Logs;
 import fr.alkanife.amiria.characters.Character;
 import fr.alkanife.amiria.characters.Characters;
 import fr.alkanife.amiria.lang.Lang;
@@ -23,6 +24,8 @@ public class CharacterCommand {
 
             if (characterName == null)
                 return;
+
+            Logs.command(interaction, characterName);
 
             Locale locale = Lang.findLocale(interaction);
 
